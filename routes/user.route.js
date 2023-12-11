@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.post('/upload', (req, res) => {    
+router.post('/upload', (req, res) => {
     res.status(200).json({
         error: false,
         message: "",
@@ -19,5 +19,12 @@ router.post('/upload', (req, res) => {
     });
 });
 
+router.delete('/delete', (req, res) => {
+    res.status(200).json({
+        error: false,
+        message: "",
+        data: "HEllo from user router delete"
+    })
+})
 
 module.exports = router;
